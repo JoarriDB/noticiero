@@ -161,9 +161,6 @@ if (strpos($path, '/images/') === 0) {
       <div class="row mb-2">
         <div class="col-md-6">
           <div class="card flex-md-row mb-4 shadow-sm ">
-            <?php if (!empty($tecnologia["imagen"])): ?>
-            <img src="<?php echo $tecnologia["imagen"]; ?>" class="card-img-left flex-auto d-none d-md-block" style="width:200px; object-fit:cover;">
-            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-secondary">Economía</strong>
               <h3 class="mb-0">
@@ -221,6 +218,9 @@ if (strpos($path, '/images/') === 0) {
       <div class="row mb-2">
         <div class="col-md-6">
           <div class="card flex-md-row mb-4 shadow-sm ">
+            <?php if (!empty($tecnologia["imagen"])): ?>
+            <img src="<?php echo $tecnologia["imagen"]; ?>" class="card-img-left flex-auto d-none d-md-block" style="width:200px; object-fit:cover;">
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-primary">Tecnología</strong>
               <h3 class="mb-0">
