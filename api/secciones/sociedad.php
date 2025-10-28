@@ -7,5 +7,6 @@ $sociedad = [
 "titulo" => "Campaña nacional promueve la donación de sangre",
 "autor" => "Redacción",
 "resumen" => "Organizaciones civiles y autoridades inician jornadas en distintas ciudades para aumentar las reservas hospitalarias ante la temporada alta.",
+"imagen" => "/images/sociedad/sociedad.jpg",
 ];
 ?>

@@ -7,5 +7,6 @@ $economia = [
 "titulo" => "Inflación se modera en el trimestre y permite alivio a hogares",
 "autor" => "Elena Martín",
 "resumen" => "La tasa de inflación interanual se redujo gracias a la caída de precios energéticos y alimentos, según datos oficiales.",
+"imagen" => "/images/economia/economia.jpg",
 ];
 ?>

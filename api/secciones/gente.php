@@ -7,5 +7,6 @@ $gente = [
 "titulo" => "Atleta local obtiene medalla en campeonato internacional",
 "autor" => "Jorge Herrera",
 "resumen" => "La deportista consiguió podio tras una actuación destacada, generando celebraciones en su ciudad natal.",
+"imagen" => "/images/gente/gente.jpg",
 ];
 ?>
