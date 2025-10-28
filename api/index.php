@@ -49,6 +49,15 @@ if (strpos($path, '/images/') === 0) {
 }
 
 ?>
+<?php
+// Helper to render section image if provided
+function render_img_tag($section) {
+  if (!empty($section) && !empty($section["imagen"])) {
+    $src = htmlspecialchars($section["imagen"], ENT_QUOTES);
+    echo '<img src="' . $src . '" class="card-img-left flex-auto d-none d-md-block" style="width:200px; object-fit:cover;">';
+  }
+}
+?>
 
 <!doctype html>
 <html lang="en">
@@ -169,6 +178,7 @@ if (strpos($path, '/images/') === 0) {
       <div class="row mb-2">
         <div class="col-md-6">
           <div class="card flex-md-row mb-4 shadow-sm ">
+            <?php render_img_tag($economia); ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-secondary">Economía</strong>
               <h3 class="mb-0">
@@ -193,6 +203,7 @@ if (strpos($path, '/images/') === 0) {
         </div>
         <div class="col-md-6">
           <div class="card flex-md-row mb-4 shadow-sm ">
+            <?php render_img_tag($opinion); ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-warning">Opinión</strong>
               <h3 class="mb-0">
@@ -253,6 +264,7 @@ if (strpos($path, '/images/') === 0) {
         </div>
         <div class="col-md-6">
           <div class="card flex-md-row mb-4 shadow-sm ">
+            <?php render_img_tag($ciencia); ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-success">Ciencia</strong>
               <h3 class="mb-0">
@@ -286,6 +298,7 @@ if (strpos($path, '/images/') === 0) {
       <div class="row mb-2">
         <div class="col-md-6">
           <div class="card flex-md-row mb-4 shadow-sm ">
+            <?php render_img_tag($cultura); ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-secondary">Cultura</strong>
               <h3 class="mb-0">
@@ -310,6 +323,7 @@ if (strpos($path, '/images/') === 0) {
         </div>
         <div class="col-md-6">
           <div class="card flex-md-row mb-4 shadow-sm ">
+            <?php render_img_tag($gente); ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-warning">Gente</strong>
               <h3 class="mb-0">
@@ -344,6 +358,7 @@ if (strpos($path, '/images/') === 0) {
       <div class="row mb-2">
         <div class="col-md-4">
           <div class="card flex-md-row mb-4 shadow-sm ">
+            <?php render_img_tag($deportes); ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-primary">Deportes</strong>
               <h3 class="mb-0">
@@ -368,6 +383,7 @@ if (strpos($path, '/images/') === 0) {
         </div>
         <div class="col-md-4">
           <div class="card flex-md-row mb-4 shadow-sm ">
+            <?php render_img_tag($television); ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-success">Televisión</strong>
               <h3 class="mb-0">
@@ -392,6 +408,7 @@ if (strpos($path, '/images/') === 0) {
         </div>
         <div class="col-md-4">
           <div class="card flex-md-row mb-4 shadow-sm ">
+            <?php render_img_tag($video); ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-success">Televisión</strong>
               <h3 class="mb-0">
@@ -426,6 +443,7 @@ if (strpos($path, '/images/') === 0) {
       <div class="row mb-2">
         <div class="col-md-4">
           <div class="card flex-md-row mb-4 shadow-sm ">
+            <?php render_img_tag($formacion); ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-primary">Formación</strong>
               <h3 class="mb-0">
@@ -450,6 +468,7 @@ if (strpos($path, '/images/') === 0) {
         </div>
         <div class="col-md-4">
           <div class="card flex-md-row mb-4 shadow-sm ">
+            <?php render_img_tag($empleo); ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-success">Empleo</strong>
               <h3 class="mb-0">
@@ -474,6 +493,7 @@ if (strpos($path, '/images/') === 0) {
         </div>
         <div class="col-md-4">
           <div class="card flex-md-row mb-4 shadow-sm ">
+            <?php render_img_tag($sociedad); ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-success">Sociedad</strong>
               <h3 class="mb-0">
@@ -507,6 +527,7 @@ if (strpos($path, '/images/') === 0) {
       <div class="row mb-2">
         <div class="col-md-6">
           <div class="card flex-md-row mb-4 shadow-sm ">
+            <?php render_img_tag($openstack); ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-primary">OpenStack</strong>
               <h3 class="mb-0">
@@ -531,6 +552,7 @@ if (strpos($path, '/images/') === 0) {
         </div>
         <div class="col-md-6">
           <div class="card flex-md-row mb-4 shadow-sm ">
+            <?php render_img_tag($git); ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-success">Git</strong>
               <h3 class="mb-0">
@@ -564,6 +586,7 @@ if (strpos($path, '/images/') === 0) {
       <div class="row mb-2">
         <div class="col-md-6">
           <div class="card flex-md-row mb-4 shadow-sm ">
+            <?php render_img_tag($contenedores); ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-secondary">Contenedores</strong>
               <h3 class="mb-0">
@@ -588,6 +611,7 @@ if (strpos($path, '/images/') === 0) {
         </div>
         <div class="col-md-6">
           <div class="card flex-md-row mb-4 shadow-sm ">
+            <?php render_img_tag($openshift); ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-warning">OpenShift</strong>
               <h3 class="mb-0">
