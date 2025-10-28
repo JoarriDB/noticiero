@@ -92,14 +92,8 @@ if (strpos($path, '/images/') === 0) {
 
       <!-- Fila 1 -->
       <?php
-  include("secciones/internacional.php");
-  <?php if (!empty($internacional["imagen"])): ?>
-  <img src="<?php echo $internacional["imagen"]; ?>" class="card-img-left flex-auto d-none d-md-block" style="width:200px; object-fit:cover;">
-  <?php endif; ?>
-  include("secciones/nacional.php");
-  <?php if (!empty($nacional["imagen"])): ?>
-  <img src="<?php echo $nacional["imagen"]; ?>" class="card-img-left flex-auto d-none d-md-block" style="width:200px; object-fit:cover;">
-  <?php endif; ?>
+        include("secciones/internacional.php");
+        include("secciones/nacional.php");
       ?>
       <div class="row mb-2">
         <div class="col-md-6">
@@ -161,14 +155,8 @@ if (strpos($path, '/images/') === 0) {
 
       <!-- Fila 2 -->
       <?php
-  include("secciones/economia.php");
-  <?php if (!empty($economia["imagen"])): ?>
-  <img src="<?php echo $economia["imagen"]; ?>" class="card-img-left flex-auto d-none d-md-block" style="width:200px; object-fit:cover;">
-  <?php endif; ?>
-  include("secciones/opinion.php");
-  <?php if (!empty($opinion["imagen"])): ?>
-  <img src="<?php echo $opinion["imagen"]; ?>" class="card-img-left flex-auto d-none d-md-block" style="width:200px; object-fit:cover;">
-  <?php endif; ?>
+        include("secciones/economia.php");
+        include("secciones/opinion.php");
       ?>
       <div class="row mb-2">
         <div class="col-md-6">
@@ -224,14 +212,8 @@ if (strpos($path, '/images/') === 0) {
 
       <!-- Fila 3 -->
       <?php
-  include("secciones/tecnologia.php");
-  <?php if (!empty($tecnologia["imagen"])): ?>
-  <img src="<?php echo $tecnologia["imagen"]; ?>" class="card-img-left flex-auto d-none d-md-block" style="width:200px; object-fit:cover;">
-  <?php endif; ?>
-  include("secciones/ciencia.php");
-  <?php if (!empty($ciencia["imagen"])): ?>
-  <img src="<?php echo $ciencia["imagen"]; ?>" class="card-img-left flex-auto d-none d-md-block" style="width:200px; object-fit:cover;">
-  <?php endif; ?>
+        include("secciones/tecnologia.php");
+        include("secciones/ciencia.php");
       ?>
       <div class="row mb-2">
         <div class="col-md-6">
@@ -290,14 +272,8 @@ if (strpos($path, '/images/') === 0) {
 
       <!-- Fila 4 -->
       <?php
-  include("secciones/cultura.php");
-  <?php if (!empty($cultura["imagen"])): ?>
-  <img src="<?php echo $cultura["imagen"]; ?>" class="card-img-left flex-auto d-none d-md-block" style="width:200px; object-fit:cover;">
-  <?php endif; ?>
-  include("secciones/gente.php");
-  <?php if (!empty($gente["imagen"])): ?>
-  <img src="<?php echo $gente["imagen"]; ?>" class="card-img-left flex-auto d-none d-md-block" style="width:200px; object-fit:cover;">
-  <?php endif; ?>
+        include("secciones/cultura.php");
+        include("secciones/gente.php");
       ?>
       <div class="row mb-2">
         <div class="col-md-6">
@@ -353,18 +329,9 @@ if (strpos($path, '/images/') === 0) {
 
       <!-- Fila 5 -->
       <?php
-  include("secciones/deportes.php");
-  <?php if (!empty($deportes["imagen"])): ?>
-  <img src="<?php echo $deportes["imagen"]; ?>" class="card-img-left flex-auto d-none d-md-block" style="width:200px; object-fit:cover;">
-  <?php endif; ?>
-  include("secciones/television.php");
-  <?php if (!empty($television["imagen"])): ?>
-  <img src="<?php echo $television["imagen"]; ?>" class="card-img-left flex-auto d-none d-md-block" style="width:200px; object-fit:cover;">
-  <?php endif; ?>
-  include("secciones/video.php");
-  <?php if (!empty($video["imagen"])): ?>
-  <img src="<?php echo $video["imagen"]; ?>" class="card-img-left flex-auto d-none d-md-block" style="width:200px; object-fit:cover;">
-  <?php endif; ?>
+        include("secciones/deportes.php");
+        include("secciones/television.php");
+        include("secciones/video.php");
       ?>
       <div class="row mb-2">
         <div class="col-md-4">
@@ -444,18 +411,9 @@ if (strpos($path, '/images/') === 0) {
 
       <!-- Fila 6 -->
       <?php
-  include("secciones/formacion.php");
-  <?php if (!empty($formacion["imagen"])): ?>
-  <img src="<?php echo $formacion["imagen"]; ?>" class="card-img-left flex-auto d-none d-md-block" style="width:200px; object-fit:cover;">
-  <?php endif; ?>
-  include("secciones/empleo.php");
-  <?php if (!empty($empleo["imagen"])): ?>
-  <img src="<?php echo $empleo["imagen"]; ?>" class="card-img-left flex-auto d-none d-md-block" style="width:200px; object-fit:cover;">
-  <?php endif; ?>
-  include("secciones/sociedad.php");
-  <?php if (!empty($sociedad["imagen"])): ?>
-  <img src="<?php echo $sociedad["imagen"]; ?>" class="card-img-left flex-auto d-none d-md-block" style="width:200px; object-fit:cover;">
-  <?php endif; ?>
+        include("secciones/formacion.php");
+        include("secciones/empleo.php");
+        include("secciones/sociedad.php");
       ?>
       <div class="row mb-2">
         <div class="col-md-4">
@@ -535,14 +493,8 @@ if (strpos($path, '/images/') === 0) {
 
       <!-- Fila 7 -->
       <?php
-  include("secciones/openstack.php");
-  <?php if (!empty($openstack["imagen"])): ?>
-  <img src="<?php echo $openstack["imagen"]; ?>" class="card-img-left flex-auto d-none d-md-block" style="width:200px; object-fit:cover;">
-  <?php endif; ?>
-  include("secciones/git.php");
-  <?php if (!empty($git["imagen"])): ?>
-  <img src="<?php echo $git["imagen"]; ?>" class="card-img-left flex-auto d-none d-md-block" style="width:200px; object-fit:cover;">
-  <?php endif; ?>
+        include("secciones/openstack.php");
+        include("secciones/git.php");
       ?>
       <div class="row mb-2">
         <div class="col-md-6">
@@ -598,14 +550,8 @@ if (strpos($path, '/images/') === 0) {
 
       <!-- Fila 8 -->
       <?php
-  include("secciones/contenedores.php");
-  <?php if (!empty($contenedores["imagen"])): ?>
-  <img src="<?php echo $contenedores["imagen"]; ?>" class="card-img-left flex-auto d-none d-md-block" style="width:200px; object-fit:cover;">
-  <?php endif; ?>
-  include("secciones/openshift.php");
-  <?php if (!empty($openshift["imagen"])): ?>
-  <img src="<?php echo $openshift["imagen"]; ?>" class="card-img-left flex-auto d-none d-md-block" style="width:200px; object-fit:cover;">
-  <?php endif; ?>
+        include("secciones/contenedores.php");
+        include("secciones/openshift.php");
       ?>
       <div class="row mb-2">
         <div class="col-md-6">
