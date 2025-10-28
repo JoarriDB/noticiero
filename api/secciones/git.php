@@ -4,8 +4,8 @@ SUSTITUYE LAS XXX POR UN VALOR DE UNA NOTICIA DE INTERES EN ESTA CATEGORIA
 *****/
 
 $git = [
-"titulo" => "XXX",
-"autor" => "XXX",
-"resumen" => "XXX",
+"titulo" => "Prácticas recomendadas para mantener repositorios limpios",
+"autor" => "Carlos Ramírez",
+"resumen" => "Consejos sobre ramas, mensajes de commit claros y uso de CI/CD para equipos que gestionan código colaborativo.",
 ];
 ?>
